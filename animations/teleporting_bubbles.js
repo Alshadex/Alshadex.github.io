@@ -1,9 +1,7 @@
-// let p5Instance;
+let p5Bubbles;
 
 // Modal
 $('#bubblesModal').on('shown.bs.modal', function (e) {
-  let p5Instance;
-
   let sketch = function(p) {
     let index;
     let circles = [
@@ -58,9 +56,9 @@ $('#bubblesModal').on('shown.bs.modal', function (e) {
       }
     };
   };
-  p5Instance = new p5(sketch, 'bubbles-canvas');
+  p5Bubbles = new p5(sketch, 'bubbles-canvas');
 });
 
 $('#bubblesModal').on('hidden.bs.modal', function (e) {
-  p5Instance.remove();
+  p5Bubbles.remove();
 });

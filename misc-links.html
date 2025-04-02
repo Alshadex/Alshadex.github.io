@@ -66,7 +66,7 @@
         transform: translateY(-2px);
       }
 
-      .blog-header {
+      .page-header {
         text-align: center;
         padding: 4rem 0;
         background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -74,61 +74,54 @@
         margin-bottom: 3rem;
       }
 
-      .blog-title {
+      .page-title {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
       }
 
-      .blog-subtitle {
+      .page-subtitle {
         font-size: 1.2rem;
         opacity: 0.9;
       }
 
-      .blog-card {
+      .resource-card {
         border: none;
         border-radius: 15px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transition: all 0.3s ease;
         margin-bottom: 2rem;
         height: 100%;
-        cursor: pointer;
       }
 
-      .blog-card:hover {
+      .resource-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0,0,0,0.1);
       }
 
-      .blog-card .card-body {
+      .resource-card .card-body {
         padding: 1.5rem;
       }
 
-      .blog-card .card-title {
+      .resource-card .card-title {
         color: var(--primary-color);
         font-weight: 600;
         margin-bottom: 1rem;
       }
 
-      .blog-card .card-text {
+      .resource-card .card-text {
         color: #666;
         margin-bottom: 1rem;
       }
 
-      .blog-meta {
-        font-size: 0.9rem;
-        color: #888;
+      .resource-link {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
       }
 
-      .blog-tag {
-        display: inline-block;
-        padding: 0.25rem 0.75rem;
-        background-color: var(--secondary-color);
-        color: white;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
+      .resource-link:hover {
+        color: var(--primary-color);
       }
 
       .section-title {
@@ -138,7 +131,7 @@
         text-align: center;
       }
     </style>
-    <title>Alex Lin - Blog</title>
+    <title>Alex Lin - Misc Links</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -146,7 +139,7 @@
       <div class="container">
         <div class="d-flex align-items-center">
           <img src="./img/my_avatar.png" alt="Profile Avatar" width="40" height="40" class="rounded-circle me-2">
-          <a class="navbar-brand" href="#">Alex Lin</a>
+          <a class="navbar-brand" href="index.html">Alex Lin</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -154,7 +147,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="index.html">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#engineering-wiki">MyEngineeringWiki</a>
@@ -163,7 +156,7 @@
               <a class="nav-link" href="./download/Alex Lin Resume.pdf">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="misc-links.html">Misc Links</a>
+              <a class="nav-link active" href="misc-links.html">Misc Links</a>
             </li>
             <li class="nav-item">
               <a class="github-link" href="https://github.com/Alshadex" target="_blank">
@@ -175,59 +168,38 @@
       </div>
     </nav>
 
-    <!-- Blog Posts Grid -->
-    <!-- <div class="container">
+    <!-- Resources Grid -->
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
+        <!-- Statistics Cheatsheets -->
+        <div class="col-md-6">
+          <div class="resource-card">
             <div class="card-body">
-              <div class="blog-meta mb-2">March 15, 2024</div>
-              <h5 class="card-title">Building Modern Web Applications</h5>
-              <p class="card-text">Exploring the latest trends and best practices in web development, from React to serverless architectures.</p>
-              <div class="blog-tags">
-                <span class="blog-tag">Web Development</span>
-                <span class="blog-tag">React</span>
-                <span class="blog-tag">Architecture</span>
-              </div>
+              <h5 class="card-title">Statistics Cheatsheets</h5>
+              <p class="card-text">A comprehensive collection of statistics cheatsheets for quick reference.</p>
+              <a href="./stats/stats.html" class="resource-link">
+                View Statistics Cheatsheets →
+              </a>
             </div>
           </div>
-        </div> -->
+        </div>
 
-        <!-- Example Blog Post Card -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
+        <!-- p5 Animations -->
+        <div class="col-md-6">
+          <div class="resource-card">
             <div class="card-body">
-              <div class="blog-meta mb-2">March 10, 2024</div>
-              <h5 class="card-title">The Future of AI in Software Development</h5>
-              <p class="card-text">How artificial intelligence is transforming the way we write, test, and deploy software.</p>
-              <div class="blog-tags">
-                <span class="blog-tag">AI</span>
-                <span class="blog-tag">Machine Learning</span>
-                <span class="blog-tag">Future Tech</span>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Example Blog Post Card -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <div class="card-body">
-              <div class="blog-meta mb-2">March 5, 2024</div>
-              <h5 class="card-title">Clean Code Principles</h5>
-              <p class="card-text">Essential principles and practices for writing maintainable and efficient code.</p>
-              <div class="blog-tags">
-                <span class="blog-tag">Programming</span>
-                <span class="blog-tag">Best Practices</span>
-                <span class="blog-tag">Code Quality</span>
-              </div>
+              <h5 class="card-title">p5.js Animations</h5>
+              <p class="card-text">Interactive animations created using p5.js library.</p>
+              <a href="./animations/animations.html" class="resource-link">
+                View Animations →
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>
+</html> 
