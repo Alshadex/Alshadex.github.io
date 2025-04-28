@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/ALicon.png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --text-color: #2c3e50;
+        --bg-color: #f8f9fa;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      }
+
+      .navbar {
+        background-color: var(--primary-color) !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+      }
+
+      .navbar-brand {
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-brand:hover {
+        color: var(--secondary-color) !important;
+      }
+
+      .nav-link {
+        color: rgba(255,255,255,0.9) !important;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1rem;
+        margin: 0 0.2rem;
+      }
+
+      .nav-link:hover {
+        color: var(--secondary-color) !important;
+        transform: translateY(-2px);
+      }
+
+      .github-link {
+        font-size: 1.5rem;
+        color: rgba(255,255,255,0.9) !important;
+        transition: all 0.3s ease;
+        margin-left: 1rem;
+      }
+
+      .github-link:hover {
+        color: var(--secondary-color) !important;
+        transform: translateY(-2px);
+      }
+
+      .wiki-container {
+        padding: 2rem 0;
+      }
+
+      .wiki-iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+    </style>
+    <title>Alex Lin - Engineering Wiki</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <img src="./img/my_avatar.png" alt="Profile Avatar" width="40" height="40" class="rounded-circle me-2">
+          <a class="navbar-brand" href="index.html">Alex Lin</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="engineering-wiki.html">MyEngineeringWiki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./download/Alex Lin Resume.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="misc-links.html">Misc Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="github-link" href="https://github.com/Alshadex" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Wiki Content -->
+    <div class="container wiki-container">
+      <iframe 
+        src="https://malleable-shad-49b.notion.site/ebd/d339a7f4ac3040f18260822df0ca2afb" 
+        width="100%" 
+        height="800" 
+        frameborder="0" 
+        allowfullscreen
+        class="wiki-iframe">
+      </iframe>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html> 
